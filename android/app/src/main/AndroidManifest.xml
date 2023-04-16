@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alok">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:name="${applicationName}"
+        android:label="My Flutter App"
+        android:icon="@mipmap/ic_launcher">
+
+        <!-- Register the Flutter embedding v2 app -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Add any additional activities here -->
+
+    </application>
+
+</manifest>
+
+
+
+
+    <!--<manifest xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    package="com.example.alok">-->
+<!--    &lt;!&ndash; io.flutter.app.FlutterApplication is an android.app.Application that-->
+<!--         calls FlutterMain.startInitialization(this); in its onCreate method.-->
+<!--         In most cases you can leave this as-is, but you if you want to provide-->
+<!--         additional functionality it is fine to subclass or reimplement-->
+<!--         FlutterApplication and put your custom class here. &ndash;&gt;-->
+
+<!--    <uses-permission android:name="android.permission.INTERNET" />-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+<!--    <application-->
+<!--        android:name="${applicationName}"-->
+<!--        android:label="PocketPlus">-->
+<!--&lt;!&ndash;        <activity&ndash;&gt;-->
+<!--&lt;!&ndash;            android:name=".MainActivity"&ndash;&gt;-->
+<!--&lt;!&ndash;        >&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; Specifies an Android theme to apply to this Activity as soon as&ndash;&gt;-->
+<!--&lt;!&ndash;                 the Android process has started. This theme is visible to the user&ndash;&gt;-->
+<!--&lt;!&ndash;                 while the Flutter UI initializes. After that, this theme continues&ndash;&gt;-->
+<!--&lt;!&ndash;                 to determine the Window background behind the Flutter UI. &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            <meta-data&ndash;&gt;-->
+<!--&lt;!&ndash;              android:name="io.flutter.embedding.android.NormalTheme"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:resource="@style/NormalTheme"&ndash;&gt;-->
+<!--&lt;!&ndash;              />&ndash;&gt;-->
+<!--&lt;!&ndash;            &lt;!&ndash; Displays an Android View that continues showing the launch screen&ndash;&gt;-->
+<!--&lt;!&ndash;                 Drawable until Flutter paints its first frame, then this splash&ndash;&gt;-->
+<!--&lt;!&ndash;                 screen fades out. A splash screen is useful to avoid any visual&ndash;&gt;-->
+<!--&lt;!&ndash;                 gap between the end of Android's launch screen and the painting of&ndash;&gt;-->
+<!--&lt;!&ndash;                 Flutter's first frame. &ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;            <meta-data&ndash;&gt;-->
+<!--&lt;!&ndash;              android:name="io.flutter.embedding.android.SplashScreenDrawable"&ndash;&gt;-->
+<!--&lt;!&ndash;              android:resource="@drawable/launch_background"&ndash;&gt;-->
+<!--&lt;!&ndash;              />&ndash;&gt;-->
+<!--&lt;!&ndash;            <intent-filter>&ndash;&gt;-->
+<!--&lt;!&ndash;                <action android:name="android.intent.action.MAIN"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                <category android:name="android.intent.category.LAUNCHER"/>&ndash;&gt;-->
+<!--&lt;!&ndash;            </intent-filter>&ndash;&gt;-->
+<!--&lt;!&ndash;        </activity>&ndash;&gt;-->
+<!--        &lt;!&ndash; Don't delete the meta-data below.-->
+<!--             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java &ndash;&gt;-->
+<!--        <meta-data-->
+<!--            android:name="flutterEmbedding"-->
+<!--            android:value="2" />-->
+<!--    </application>-->
+<!--</manifest>-->
