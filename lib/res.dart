@@ -11,6 +11,7 @@ class Res {
 
   //API Constants
   static const String baseURL = 'http://192.168.63.243:8000/api/';
+
   static const String loginAPI = baseURL + 'auth/login';
   static const String registerAPI = baseURL + 'auth/register';
   static const String createAccount = baseURL + 'createAccount';

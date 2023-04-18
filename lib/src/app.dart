@@ -34,12 +34,29 @@ class AlokApp extends StatelessWidget {
               }
             } else {
               return Scaffold(
-                body: Center(
-                    child: Icon(
-                  CupertinoIcons.money_dollar,
-                  color: Colors.black,
-                  size: 150,
-                )),
+                body: Column(
+                  children: [
+                    Center(
+                        child: Image.asset(
+                     'assets/images/pocket+_logo.png',
+                      color: Colors.black,
+                      height: 150,
+                          width: 150
+                    )),
+
+                    Positioned(
+                      bottom: 5,
+                      child: Center(
+                        child: Text(
+                          'Powered by Eklipse Technologies',
+                          style: TextStyle(
+                            fontSize: 10
+                          ),
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               );
             }
           }),
